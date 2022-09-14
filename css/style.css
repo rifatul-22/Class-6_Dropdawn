@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #ddd;
+}
+nav ul li{
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+}
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: blueviolet;
+    color: black;
+    border-radius: 18px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    background-color: blue;
+    color: #ddd;
+}
+nav ul li ul{
+    position: absolute;
+    top: 150%;
+    left: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s;
+}
+nav ul li:hover ul{
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+nav ul li ul li{
+    display: block;
+    /* border-radius: 10px;
+    border-bottom: 2px solid black; */
+}
+nav ul li ul li a{
+    background-color: orange;
+}
+.nav{
+    margin-top: 400px;
+    margin-bottom: 400px;
+    background-color: wheat;
+    height: 80px;
+}
+.nav ul li{
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+}
+.nav ul li a{
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.nav ul li a:hover{
+    background-color: black;
+}
+.nav ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .6s;
+}
+.nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+.nav ul li ul li{
+    display: block;
+    position: relative;
+}
+.nav ul li ul li ul{
+    position: absolute;
+    left: 110px;
+    top: 50px;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+.nav ul li ul li ul li{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s;
+}
+.nav ul li ul li:hover ul li{
+    visibility: visible;
+    opacity: 1;
+}
+.navber{
+    background-color: #ddd;
+    margin-bottom: 100px;
+}
+.navber ul li{
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+.navber ul li a{
+    display: inline-block;
+    background-color: red;
+    text-decoration: none;
+    color: #ddd;
+    padding: 15px 20px;
+    border-radius: 15px;
+    transition: 0.6s;
+}
+.navber ul li a:hover{
+    background-color: black;
+}
+.navber ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.navber ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+.navber ul li ul li ul{
+    position: absolute;
+    top: 100px;
+    left: 120px;
+}
+.navber ul li ul li ul li{
+    visibility: hidden;
+}
+.navber ul li ul li:hover ul li{
+    visibility: visible;
+}
